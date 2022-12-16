@@ -1,19 +1,13 @@
 package com.graphql.hackernews.pojo;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+
+@Builder
+@Data
+@AllArgsConstructor
 public class Link {
     private final String url;
     private final String description;
-
-    public Link(String url, String description) {
-        this.url = url;
-        this.description = description;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public String getDescription() {
-        return description;
-    }
 }

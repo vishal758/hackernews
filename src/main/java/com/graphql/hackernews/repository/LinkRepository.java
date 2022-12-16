@@ -18,7 +18,7 @@ public class LinkRepository {
         return links;
     }
     
-    public void saveLink(Link link) {
+    public void saveLink(final Link link) {
         links.add(link);
     }
 }
