@@ -1,11 +1,11 @@
 # hackernews
-#### Starting the server 
+#### Starting the Jetty server 
 ```
 mvn jetty:run
 ```
 
 #### Syntaxes
-######Query syntax to get allLinks
+###### Query syntax to get allLinks
 ```
 {
   allLinks {
@@ -15,7 +15,7 @@ mvn jetty:run
 }
 ```
 
-######Mutation to create a new link
+###### Mutation to create a new link
 
 ```
 mutation createLink {
