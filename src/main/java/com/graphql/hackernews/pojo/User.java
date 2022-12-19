@@ -11,10 +11,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Builder
 @Data
 @AllArgsConstructor
-@Document(collection = "links")
-public class Link {
+@Document(collection = "users")
+public class User {
     @Id
     private String id;
-    private String url;
-    private String description;
+    private String name;
+    private String email;
+    private String password;
 }

@@ -4,11 +4,27 @@ type Link {
   description: String
 }
 
-type Query {
-  allLinks: [Link]
+type User {
+  id: ID!
+  name: String!
+  email: String
+  password: String
 }
 
+type Query {
+  allLinks: [Link]
+  allUsers: [User]
+  getUserByEmail(email: String!): User
+  getUser(id: String!): User
+}
+
+ input AuthData {
+   email: String!
+   password: String!
+ }
+
 type Mutation {
+  createUser(name: String!, authData: AuthData!): User
   createLink(url: String!, description: String!): Link
 }
 
